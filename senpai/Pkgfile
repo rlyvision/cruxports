@@ -1,6 +1,6 @@
 # Description: A modern terminal IRC client
 # URL: https://git.sr.ht/~delthas/senpai
-# Maintainer: Hamza E. hamzaelasmar12 at gmail dot com
+# Maintainer: Hamza E. ,  hamzaelasmar12 at gmail dot com
 # Depends on: go scdoc
 name=senpai
 version=0.4.1

@@ -1,7 +1,7 @@
 # Description: wallpaper handler
 # URL: github.com/himdel/hsetroot
 # Maintainer: Hamza E. , hamzaelasmar12 at gmail dot com
-# Depends on: imlib2 xorg-libxinerama xorg-libx11
+# Depends on: imlib2 xorg-libxinerama
 
 name=hsetroot
 version=1.0.5

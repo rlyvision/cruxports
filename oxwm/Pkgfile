@@ -1,7 +1,7 @@
 # Description: dynamic wm written in zig and inspired by dwm
 # URL: https://github.com/tonybanters/oxwm
-# Maintainer: Hamza E. hamzaelasmar12 at gmail dot com
-# Depends on: zig xorg-libx11 xorg-libxinerama xorg-libxft fontconfig freetype
+# Maintainer: Hamza E. , hamzaelasmar12 at gmail dot com
+# Depends on: zig xorg-libxinerama xorg-libxft
 
 name=oxwm
 version=0.11.4

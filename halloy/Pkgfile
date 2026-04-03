@@ -1,7 +1,7 @@
 # Description: Highly customizable irc client
 # URL: https://halloy.chat
-# Maintainer: Hamza E. hamzaelasmar12 at gmail dot com
-# Depends on: alsa-lib openssl xorg-libxcb rust git
+# Maintainer: Hamza E., hamzaelasmar12 at gmail dot com
+# Depends on: alsa-lib xorg-libxcb rust git
 name=halloy
 version=2026.5
 release=1

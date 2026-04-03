@@ -1,6 +1,6 @@
 # Description: Secure git credential helper that is built on .NET
 # URL: https://github.com/git-ecosystem/git-credential-manager
-# Maintainer: Hamza E. hamzaelasmar12 at gmail dot com
+# Maintainer: Hamza E., hamzaelasmar12 at gmail dot com
 # Depends on: icu
 name=git-credential-manager
 version=2.6.1

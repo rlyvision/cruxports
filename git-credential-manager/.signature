@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/ports.pub
+RWQ+JgR6i+liwQZfMU1S4JFOxfC2qnpt7AA9nDcqzlsXwBNzNS8hwHXd17JdmVCU0smAGARTZ8tY2Ae2Rl9yAm6QFd2hn/NCoAA=
+SHA256 (Pkgfile) = c75055e1918b52d7ae9c0102d0002099b4002d4af55abbc89cc283c4137dcb06
+SHA256 (.footprint) = 85c2e3d274f5f1bb3e75aa2e4cb4fb3bcee199b6f77c2c3fde2602f7aedff0a5
+SHA256 (gcm-linux_amd64.2.6.1.tar.gz) = e01f84d3b362c3c52de6825d4e28228adb89246c9aee102b18a311f923f24115

@@ -1,0 +1,24 @@
+# Description: Visual Studio Code - Code editing redefined
+# URL: https://code.visualstudio.com/
+# Maintainer: Hamza E. , hamzaelasmar12 at gmail dot com
+# Depends on: gtk3, libnotify, libxss, nss, alsa-lib
+
+name=vscode
+version=1.99.2
+release=2
+source=(https://update.code.visualstudio.com/${version}/linux-x64/stable)
+
+build() {
+    # Create the lib directory in the package root
+    mkdir -p $PKG/usr/lib
+    
+    # The downloaded file is named 'stable' from the source link
+    tar -xzf $SRC/stable -C $PKG/usr/lib/
+    
+    # Rename the extracted directory
+    mv $PKG/usr/lib/VSCode-linux-x64 $PKG/usr/lib/vscode
+    
+    # Create symlink in /usr/bin
+    mkdir -p $PKG/usr/bin
+    ln -sf /usr/lib/vscode/bin/code $PKG/usr/bin/code
+}

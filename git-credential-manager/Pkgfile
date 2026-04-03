@@ -1,0 +1,18 @@
+# Description: Secure git credential helper that is built on .NET
+# URL: https://github.com/git-ecosystem/git-credential-manager
+# Maintainer: Hamza E. hamzaelasmar12 at gmail dot com
+# Depends on: icu
+name=git-credential-manager
+version=2.6.1
+release=1
+source=(https://github.com/git-ecosystem/git-credential-manager/releases/download/v${version}/gcm-linux_amd64.${version}.tar.gz)
+
+build() {
+    mkdir -p ${PKG}/usr/bin
+    # Install the main binary
+    install -D -m755 * ${PKG}/usr/bin/
+
+    # Install the helper symlink that Git looks for
+    ln -sf git-credential-manager ${PKG}/usr/bin/git-credential-helper
+    
+}

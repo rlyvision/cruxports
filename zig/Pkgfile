@@ -1,0 +1,20 @@
+# Description: Zig is a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software.
+# URL: https://ziglang.org/
+# Maintainer: Hamza E., hamzaelasmar12 at gmail dot com
+# Depends on: clang lld
+
+name=zig
+version=0.15.2
+release=1
+arch=${arch:-$( uname -m )}
+source=(https://ziglang.org/download/$version/$name-aarch64-linux-$version.tar.xz
+        https://ziglang.org/download/$version/$name-x86_64-linux-$version.tar.xz)
+build() {
+
+  cd $name-$arch-linux-$version
+
+  mkdir -p $PKG/usr/{bin,lib}
+  mv zig $PKG/usr/bin
+  mv lib/* $PKG/usr/lib
+
+}

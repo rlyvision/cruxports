@@ -16,7 +16,7 @@ portspage . > index.html
 
 # Remove unwanted lines from REPO file
 if [ -f "REPO" ]; then
-    sed -i '/\.git\|updateports\.sh\|index\.html/d' REPO
+    sed -i '/\.git\|/\.sh\|index\.html/d' REPO
     echo "Removed lines containing .git, updateports.sh, and index.html from REPO"
 fi
 git add . 

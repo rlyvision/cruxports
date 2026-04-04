@@ -6,6 +6,8 @@ d:vscode
 d:senpai
 d:git-credential-manager
 d:sddm
+d:taskcommander
+d:portsmark
 f:86864c55406bedacf9ea12172ccf9f0c:hsetroot/Pkgfile
 f:458763e8a18a1867cb2533ba3510a5af:hsetroot/.md5sum
 f:05b52fafb0ff5410135b79037d695d07:hsetroot/.footprint
@@ -27,8 +29,9 @@ f:c12a895519d26efec9048af959977079:vscode/.md5sum
 f:2f90a56400328cf0448c3c93b924785e:vscode/.footprint
 f:d28f05298baedd7b15183b72f10c2856:vscode/.signature
 f:501435bdc4da6fc47e91691a6b9e9b86:senpai/Pkgfile
-f:73b7499f1f980e9c1be65c47798079e3:senpai/v0.4.1.tar.gz
 f:e1c8cd11e3011b4401a07f9e4018ef39:senpai/.md5sum
+f:9c0485d1b991f4113adc8f1380f93df1:senpai/.footprint
+f:ddbd508faded7aa0e547dee8d27188a0:senpai/.signature
 f:ea188b27819beaf962464d512db85cda:git-credential-manager/Pkgfile
 f:f13bcd67f687f7fccce2e809223d0377:git-credential-manager/.md5sum
 f:1488959ae4e28e8a7d1e44680774d206:git-credential-manager/.footprint
@@ -42,3 +45,9 @@ f:807676a76f6c64c4ec6b0994d42371de:sddm/Pkgfile
 f:5e0b179150816e5a65795d6caf50f531:sddm/.md5sum
 f:121869527bffab0337493a37531693ea:sddm/.footprint
 f:6ee4f511e09cc94209ed0775645e5118:sddm/.signature
+f:7d666f7a5a9ec337d59a5c3a8b865b17:taskcommander/Pkgfile
+f:a00f9b10bc522b9dfffb722f86fb1440:taskcommander/main.zip
+f:72e83ea67ca2234ce06932dd5bbccf52:taskcommander/.md5sum
+f:cc4d8eaee7aa5c2673095e9711db7c0b:portsmark/Pkgfile
+f:dc3074a77da4cc3fd96d0f5c98f60e44:portsmark/main.tar.gz
+f:c6cc3ef1aa150c4da120bca4d24acaaa:portsmark/.md5sum

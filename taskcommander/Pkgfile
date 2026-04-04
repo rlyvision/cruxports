@@ -1,0 +1,14 @@
+# Description: Task manager styled task viewer for linux
+# URL: https://github.com/mihai209/TaskCommander
+# Maintainer: Hamza Elasmar , hamzaelasmar12 at gmail dot com
+# Depends on: clang
+name=TaskCommander
+release=1
+version=1
+source=(https://github.com/mihai209/$name/archive/refs/heads/main.zip)
+build() {
+    cd main
+    make
+    mkdir -p $PKG/usr/bin
+    install -Dm755 taskcommander $PKG/usr/bin/taskcommander
+}

@@ -1,0 +1,13 @@
+# Description: portspage but for markdown
+# URL: https://git.crux.nu/rlyvision/portsmark/src/branch/main
+# Maintainer: Hamza Elasmar, hamzaelasmar12 at gmail dot com
+# Depends on: perl
+name=portsmark
+release=1
+version=git
+source=("https://git.crux.nu/rlyvision/portsmark/archive/main.tar.gz")
+build() {
+    cd main
+    mkdir -p /usr/bin
+    install -Dm755 portsmark.sh $PKG/usr/bin/portsmark
+}

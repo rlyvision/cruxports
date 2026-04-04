@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/ports.pub
+RWQ+JgR6i+liwVoDionzLwTW1ZuCZNqwnjVoI4Sv2kO1csfXXcM39ffhge/ugLHkdowxBqwOULBUJij1jbjumArvtnlxJxkl5Qg=
+SHA256 (Pkgfile) = a5aca4376bfbab661f6f792d682346d6c0e502865fddd69d08376737a311e045
+SHA256 (.footprint) = d858e26b602359313a95537fcec001d7d5f93dc643e0bef818679fd8a9c0de02
+SHA256 (zig-aarch64-linux-0.15.2.tar.xz) = 958ed7d1e00d0ea76590d27666efbf7a932281b3d7ba0c6b01b0ff26498f667f
+SHA256 (zig-x86_64-linux-0.15.2.tar.xz) = 02aa270f183da276e5b5920b1dac44a63f1a49e55050ebde3aecc9eb82f93239

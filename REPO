@@ -29,9 +29,8 @@ f:c12a895519d26efec9048af959977079:vscode/.md5sum
 f:2f90a56400328cf0448c3c93b924785e:vscode/.footprint
 f:d28f05298baedd7b15183b72f10c2856:vscode/.signature
 f:501435bdc4da6fc47e91691a6b9e9b86:senpai/Pkgfile
+f:73b7499f1f980e9c1be65c47798079e3:senpai/v0.4.1.tar.gz
 f:e1c8cd11e3011b4401a07f9e4018ef39:senpai/.md5sum
-f:9c0485d1b991f4113adc8f1380f93df1:senpai/.footprint
-f:ddbd508faded7aa0e547dee8d27188a0:senpai/.signature
 f:ea188b27819beaf962464d512db85cda:git-credential-manager/Pkgfile
 f:f13bcd67f687f7fccce2e809223d0377:git-credential-manager/.md5sum
 f:1488959ae4e28e8a7d1e44680774d206:git-credential-manager/.footprint
@@ -45,9 +44,12 @@ f:807676a76f6c64c4ec6b0994d42371de:sddm/Pkgfile
 f:5e0b179150816e5a65795d6caf50f531:sddm/.md5sum
 f:121869527bffab0337493a37531693ea:sddm/.footprint
 f:6ee4f511e09cc94209ed0775645e5118:sddm/.signature
-f:7d666f7a5a9ec337d59a5c3a8b865b17:taskcommander/Pkgfile
+f:0efcac0a30cc49caaf8c6ec35cdc717f:taskcommander/Pkgfile
 f:a00f9b10bc522b9dfffb722f86fb1440:taskcommander/main.zip
 f:72e83ea67ca2234ce06932dd5bbccf52:taskcommander/.md5sum
-f:cc4d8eaee7aa5c2673095e9711db7c0b:portsmark/Pkgfile
-f:dc3074a77da4cc3fd96d0f5c98f60e44:portsmark/main.tar.gz
+f:4105f50c1f795e26429921e073a5745e:taskcommander/.footprint
+f:c9e71399bdbd79d174fefabe9be5e5fc:taskcommander/.signature
+f:201d2e8ea9e9efe7c80b9376fbd7be57:portsmark/Pkgfile
 f:c6cc3ef1aa150c4da120bca4d24acaaa:portsmark/.md5sum
+f:d858b124e03aaf658527c40910371921:portsmark/.footprint
+f:2bffc8d82ac2fc9499dc1586c80baf59:portsmark/.signature

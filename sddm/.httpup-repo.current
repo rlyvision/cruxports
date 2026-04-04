@@ -1,0 +1,10 @@
+.signature
+sddm.rc
+.md5sum
+.footprint
+pre-install
+sddm-autologin.pam
+0001-Implement-substitution-of-etc-passwd-fields-in-sessi.patch
+Pkgfile
+sddm-greeter.pam
+sddm.pam

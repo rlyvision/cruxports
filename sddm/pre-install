@@ -1,0 +1,4 @@
+#!/bin/sh
+/usr/sbin/groupadd --system sddm
+/usr/sbin/useradd --system --gid sddm --home-dir /var/lib/sddm --shell /bin/false sddm
+/usr/bin/passwd --lock sddm

@@ -12,7 +12,7 @@ done
 
 # Generate the ports page
 httpup-repgen .
-portspage . > index.html
+./portsmark.sh . > README.md
 
 # Remove unwanted lines from REPO file
 if [ -f "REPO" ]; then

@@ -1,0 +1,58 @@
+# Description: Login manager for X11 and Wayland
+# URL:         https://github.com/sddm/sddm
+# Maintainer:  Hamza E. , hamzaelasmar
+# Depends on:  xorg-libxcb extra-cmake-modules qt5
+# Optional:    linux-pam xorg-xrdb xmessage
+
+name=sddm
+version=0.21.0
+release=4
+source=(
+    "https://github.com/$name/$name/archive/refs/tags/v$version.tar.gz"
+    "$name.rc"
+    "sddm-autologin.pam"
+    "sddm-greeter.pam"
+    "sddm.pam"
+)
+build(){
+    # GitHub extracts to v$version, rename to $name-$version
+    mv v$version $name-$version 2>/dev/null || true
+    
+    cd $name-$version
+   # patch -p1 -i /usr/ports/sddm/sddm/0001-Implement-substitution-of-etc-passwd-fields-in-sessi.patch
+    cd ..
+
+    mkdir -p build
+    cd build
+    cmake -Wno-dev ../$name-$version \
+            -DCMAKE_INSTALL_PREFIX=/usr \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DNO_SYSTEMD=On \
+            -DBUILD_MAN_PAGES=On \
+            -DDBUS_CONFIG_DIR=/usr/share/dbus-1/system.d \
+            -DDBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf \
+            -DLOG_FILE=/var/run/sddm/sddm.log
+    make
+    make DESTDIR=$PKG install
+
+    install -d -m 755 -o sddm -g sddm $PKG/var/lib/sddm
+    $PKG/usr/bin/sddm --example-config > $PKG/etc/sddm.conf
+    install -d -m 755 $PKG/etc/sddm.d
+    cp $PKG/etc/sddm.conf $PKG/etc/sddm.d/default.conf
+    install -d -m 755 $PKG/etc/X11/sddm
+    cp -a $PKG/usr/share/sddm/scripts $PKG/etc/X11/sddm/
+    install -D -m 755 $SRC/$name.rc $PKG/etc/rc.d/$name
+
+    sed -i 's|exec $@|exec $STARTUP $@|g' \
+        $PKG/usr/share/sddm/scripts/Xsession
+    sed -i 's|exec $@|exec $STARTUP $@|g' \
+        $PKG/etc/X11/sddm/scripts/Xsession
+
+    for f in sddm-autologin.pam sddm-greeter.pam sddm.pam; do
+        if [ -f /usr/ports/sddm/sddm/$f ]; then
+            install -D -m 644 $SRC/$f $PKG/etc/pam.d/${f%.pam}
+        fi
+    done
+
+    find $PKG/usr/share -name README -delete 2>/dev/null || true
+}

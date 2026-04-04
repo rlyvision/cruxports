@@ -1,7 +1,7 @@
 # Description: Task manager styled task viewer for linux
 # URL: https://github.com/mihai209/TaskCommander
 # Maintainer: Hamza Elasmar , hamzaelasmar12 at gmail dot com
-# Depends on: clang
+# Depends on: clang gtk4
 name=TaskCommander
 release=1
 version=1

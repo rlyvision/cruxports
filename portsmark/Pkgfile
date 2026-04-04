@@ -7,7 +7,7 @@ release=1
 version=git
 source=("https://git.crux.nu/rlyvision/portsmark/archive/main.tar.gz")
 build() {
-    cd main
+    cd $name
     mkdir -p /usr/bin
     install -Dm755 portsmark.sh $PKG/usr/bin/portsmark
 }

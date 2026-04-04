@@ -1,9 +1,0 @@
-untrusted comment: verify with /etc/ports/ports.pub
-RWQ+JgR6i+liwd03i5mXo74AN+WSLh3jqhZenWvChqYSWu5zaXut53fFUP2UgzaepjY16BU4Rclot1BfLsPEnVZ1BxJa/G2BIQE=
-SHA256 (Pkgfile) = c4c004690e79ca651d567fe6f0b519a641f074c9bf60e5a36baff26d2a90dbc0
-SHA256 (.footprint) = ed426b5ad4394f25703d783da0b098fe47dff11afaab5c4427a8f975e9a634f2
-SHA256 (v0.21.0.tar.gz) = f895de2683627e969e4849dbfbbb2b500787481ca5ba0de6d6dfdae5f1549abf
-SHA256 (sddm.rc) = ddb17fb47144d901f65068e75dc8ca894dcbf96f052689e2cdb6ab7c9c368944
-SHA256 (sddm-autologin.pam) = 51410abf81a161b270e1cdd2187fa41de2e76fb65f63081fb1889e43f1fe8fb7
-SHA256 (sddm-greeter.pam) = db53c6f49a68a040ae46a2d580ad1887146bdb19d80c5ce7312c7e7e23674d30
-SHA256 (sddm.pam) = fd99e6faffb0683c09be90d2ae9c074598dbb5827583e485374d0ad8daaf0112
